@@ -28,6 +28,14 @@
 # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
 my $LUGDUNONDIR = "/root/lugdunon";
+# Read in host name
+my $HOSTFILE = "/etc/hostname";
+open FILE, $HOSTFILE or die "Couldn't open file: $HOSTFILE";
+my $HOST = <FILE>;
+close FILE;
+chop($HOST);
+
+my $KILL_COMMAND = "/usr/bin/wget -O /dev/null http://$HOST:41976/management/CORE.COMMAND.SHUTDOWN?mode=now";
 
 my $Command = $ARGV[0];
 if ($Command eq "")
@@ -59,7 +67,8 @@ elsif ($Command eq "stop")
 	if ($running ne "")
 	{
 		# Process is running, kill it
-		system("killall net.lugdunon.Server");
+		system($KILL_COMMAND);
+		sleep(10);
 	}
 }
 elsif ($Command eq "restart")
@@ -71,7 +80,8 @@ elsif ($Command eq "restart")
 	}
 	if ($running ne "")
 	{
-		system("killall net.lugdunon.Server");
+		system($KILL_COMMAND);
+		sleep(10);
 	}
 }
 elsif ($Command eq "status")
