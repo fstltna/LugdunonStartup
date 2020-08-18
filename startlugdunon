@@ -14,7 +14,7 @@
 # along with this program; if not, write to the Free Software
 # Foundation, Inc., 675 Mass Ave, Cambridge, MA 02139, USA.
 
-my $LUGDUNONDIR = "/root/lugdunon";
+my $LUGDUNONDIR = "/home/lugowner/lugdunon";
 my $SCREENCMD = "/usr/bin/screen";
 
 # No changes below here...
