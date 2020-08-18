@@ -10,6 +10,7 @@ These start up the Lugdunon server at boot time with a "screen" process.
 1. Copy **lugdunon** into **/home/lugowner/bin** - make sure it is executable
 2. Copy **run.sh** into **/home/lugowner/lugdunon** - make sure it is executable
 3. Copy **startlugdunon** into **/home/lugowner/lugdunon** - make sure it is executable
+4. Put **@reboot /home/lugowner/bin/lugdunon start** into your crontab
 
 When you want to view the Lugdunon console, just enter "**screen -r**" in your shell.
 
