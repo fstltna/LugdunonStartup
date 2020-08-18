@@ -1,4 +1,4 @@
-# Lugdunon Startup Scripts (2.1.0)
+# Lugdunon Startup Scripts (2.2.0)
 Startup scripts for the Lugdunon MMORPG software - uses the "screen" command to manage session. This also restarts the Lugdunon process if it crashes.
 
 Official support sites: [Official Github Repo](https://github.com/fstltna/LugdunonStartup) - [Official Forum](https://LugdunonCity.org/index.php/forum/startup-scripts)  - [Official Download Area](https://LugdunonCity.org/index.php/downloads-new/category/14-startup-scripts)
