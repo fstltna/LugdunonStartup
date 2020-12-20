@@ -1,4 +1,4 @@
-# Lugdunon Startup Scripts (2.2.0)
+# Lugdunon Startup Scripts (2.3.0)
 Startup scripts for the Lugdunon MMORPG software - uses the "screen" command to manage session. This also restarts the Lugdunon process if it crashes.
 
 Official support sites: [Official Github Repo](https://github.com/fstltna/LugdunonStartup) - [Official Forum](https://LugdunonCity.org/index.php/forum/startup-scripts)  - [Official Download Area](https://LugdunonCity.org/index.php/downloads-new/category/14-startup-scripts)
@@ -8,9 +8,10 @@ Official support sites: [Official Github Repo](https://github.com/fstltna/Lugdun
 These start up the Lugdunon server at boot time with a "screen" process.
 
 1. Copy **lugdunon** into **/home/lugowner/bin** - make sure it is executable
-2. Copy **run.sh** into **/home/lugowner/lugdunon** - make sure it is executable
-3. Copy **startlugdunon** into **/home/lugowner/lugdunon** - make sure it is executable
-4. Put **@reboot /home/lugowner/bin/lugdunon start** into your crontab
+2. Copy **taillog** into **/home/lugowner/bin** - make sure it is executable
+3. Copy **run.sh** into **/home/lugowner/lugdunon** - make sure it is executable
+4. Copy **startlugdunon** into **/home/lugowner/lugdunon** - make sure it is executable
+5. Put **@reboot /home/lugowner/bin/lugdunon start** into your crontab
 
 When you want to view the Lugdunon console, just enter "**screen -r**" in your shell.
 
